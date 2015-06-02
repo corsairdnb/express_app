@@ -1,0 +1,21 @@
+extends layout
+
+block content
+  h1= page.title
+  //each user in users
+  //  div.user= user.name
+
+  div.users
+
+  script(type='text/template' id='view-user').
+    <div class="user">
+      <h3><%= name %></h3>
+      <div class="user-address">
+        <address><%= address %></address>
+      </div>
+      <div class="user-about">
+        <p><%= about %></p>
+      </div>
+    </div>
+
+    <br><br>
